@@ -1,0 +1,74 @@
+{
+  "name": "saga-actions-login-flow",
+  "version": "0.0.0",
+  "description": "A login/register flow built with React + Redux Saga + Redux Actions",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack --config webpack/prod.js --progress --colors -p",
+    "test": "standard | snazzy --verbose && NODE_ENV=test ava --verbose"
+  },
+  "repository": "sotojuan/login-flow",
+  "author": {
+    "name": "Darryl D.",
+    "email": "darryl.dex@gmail.me",
+    "url": "darryldexter.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarrylD/saga-actions-login-flow/issues"
+  },
+  "homepage": "https://github.com/DarrylD/saga-actions-login-flow#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "ava": "^0.15.1",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.18.0",
+    "localStorage": "^1.0.3",
+    "postcss-focus": "^1.0.0",
+    "postcss-import": "^8.1.1",
+    "postcss-loader": "^0.9.1",
+    "postcss-reporter": "^1.3.3",
+    "postcss-simple-vars": "^2.0.0",
+    "redux-ava": "^1.1.0",
+    "snazzy": "^4.0.0",
+    "standard": "^7.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "bcryptjs": "^2.3.0",
+    "btoa": "^1.1.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
+    "redux": "^3.5.1",
+    "redux-actions": "^0.9.1",
+    "redux-ava": "^2.0.0",
+    "redux-logger": "^2.6.1",
+    "redux-promise": "^0.5.3",
+    "redux-saga": "^0.10.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  }
+}
