@@ -1,6 +1,6 @@
 # Saga Login Flow
 
-> A login/register flow built with React & Redux Saga
+> A login/register flow built with React + Redux Saga + Redux Actions
 
 
 
